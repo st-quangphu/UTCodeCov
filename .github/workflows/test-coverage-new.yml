@@ -26,7 +26,7 @@ jobs:
       - name: Test
         uses: actions/checkout@v1
       - name: Build and Test
-        run:  xcodebuild -project iOS/Template.xcodeproj -scheme Template -sdk iphonesimulator -destination 'platform=iOS Simulator' -enableCodeCoverage YES test
+        run:  xcodebuild -project iOS/Template.xcodeproj -scheme Template -sdk iphonesimulator -destination 'platform:iOS Simulator, name:Any iOS Simulator Device' -enableCodeCoverage YES test
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1.2.1
       # - name: Build and Test
