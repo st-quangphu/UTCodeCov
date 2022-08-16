@@ -1,0 +1,40 @@
+name: Build
+
+on: [push]
+
+jobs:
+  build-project:
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: '13.0'
+      # - uses: futureware-tech/simulator-action@v1
+      #   with:
+      #     model: 'iPhone 8'
+      # - name: Build iOS
+      #   uses: yukiarrr/ios-build-action@v1.5.0
+      #   with:
+      #     p12-base64: |
+      #       ${{ secrets.CERTIFICATES_DEV }}
+      #     mobileprovision-base64: |
+      #       ${{ secrets.PROVISIONING_PROFILES_DEV }}
+      #     team-id: ZUP4YS5QJ8
+      #     code-signing-identity: Apple Developement
+      #     project-path: iOS/Template.xcodeproj
+      #     workspace-path: iOS/Template.xcworkspace
+      #     configuration: debug
+      #     scheme: TemplateDev
+      #     export-method: development
+
+      - name: BuildAndTest
+        run: xcodebuild -workspace iOS/Template.xcworkspace -scheme TemplateDev -configuration debug -sdk iphonesimulator
+
+      # - name: BuildAndTest
+      #   uses: sersoft-gmbh/xcodebuild-action@v2
+      #   with:
+      #     workspace: iOS/Template.xcworkspace
+      #     scheme: TemplateDev
+      #     action: build
+      #     allow-provisioning-device-registration: true
