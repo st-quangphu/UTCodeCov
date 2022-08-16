@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF60DB1B278B20B50023AD52 /* MError.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF60DB11278B20B50023AD52 /* MError.framework */; };
+		CF60DB20278B20B50023AD52 /* MErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF60DB1F278B20B50023AD52 /* MErrorTests.swift */; };
+		CF60DB22278B20B50023AD52 /* MError.h in Headers */ = {isa = PBXBuildFile; fileRef = CF60DB14278B20B50023AD52 /* MError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF60DB31278B20D40023AD52 /* MError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF60DB30278B20D40023AD52 /* MError.swift */; };
+		CF60DB36278B20ED0023AD52 /* MResources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF60DB35278B20ED0023AD52 /* MResources.framework */; };
+		CF60DB3D278B21800023AD52 /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF60DB3C278B21800023AD52 /* ErrorType.swift */; };
+		CF60DB41278B21A90023AD52 /* ErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF60DB40278B21A90023AD52 /* ErrorCode.swift */; };
+		CF60DB46278B21D10023AD52 /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF60DB45278B21D10023AD52 /* DataError.swift */; };
+		CFE98E35278B271900302301 /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE98E34278B271900302301 /* ServerError.swift */; };
+		CFE98E39278B283200302301 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE98E38278B283200302301 /* ApiError.swift */; };
+		CFE98E3D278B286D00302301 /* SecurityError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE98E3C278B286D00302301 /* SecurityError.swift */; };
+		CFE98E41278B287D00302301 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE98E40278B287D00302301 /* NetworkError.swift */; };
+		CFE98E49278BB6D000302301 /* UIIgnorableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE98E48278BB6D000302301 /* UIIgnorableError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF60DB1C278B20B50023AD52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF60DB08278B20B50023AD52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF60DB10278B20B50023AD52;
+			remoteInfo = MError;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF60DB11278B20B50023AD52 /* MError.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MError.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF60DB14278B20B50023AD52 /* MError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MError.h; sourceTree = "<group>"; };
+		CF60DB15278B20B50023AD52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF60DB1A278B20B50023AD52 /* MErrorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MErrorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF60DB1F278B20B50023AD52 /* MErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MErrorTests.swift; sourceTree = "<group>"; };
+		CF60DB21278B20B50023AD52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF60DB30278B20D40023AD52 /* MError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MError.swift; sourceTree = "<group>"; };
+		CF60DB35278B20ED0023AD52 /* MResources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MResources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF60DB3C278B21800023AD52 /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
+		CF60DB40278B21A90023AD52 /* ErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCode.swift; sourceTree = "<group>"; };
+		CF60DB45278B21D10023AD52 /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
+		CFE98E34278B271900302301 /* ServerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerError.swift; sourceTree = "<group>"; };
+		CFE98E38278B283200302301 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		CFE98E3C278B286D00302301 /* SecurityError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityError.swift; sourceTree = "<group>"; };
+		CFE98E40278B287D00302301 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		CFE98E48278BB6D000302301 /* UIIgnorableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIIgnorableError.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF60DB0E278B20B50023AD52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF60DB36278B20ED0023AD52 /* MResources.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF60DB17278B20B50023AD52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF60DB1B278B20B50023AD52 /* MError.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF60DB07278B20B50023AD52 = {
+			isa = PBXGroup;
+			children = (
+				CF60DB13278B20B50023AD52 /* MError */,
+				CF60DB1E278B20B50023AD52 /* MErrorTests */,
+				CF60DB12278B20B50023AD52 /* Products */,
+				CF60DB34278B20ED0023AD52 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF60DB12278B20B50023AD52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF60DB11278B20B50023AD52 /* MError.framework */,
+				CF60DB1A278B20B50023AD52 /* MErrorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF60DB13278B20B50023AD52 /* MError */ = {
+			isa = PBXGroup;
+			children = (
+				CF60DB14278B20B50023AD52 /* MError.h */,
+				CF60DB15278B20B50023AD52 /* Info.plist */,
+				CF60DB2F278B20CC0023AD52 /* Base */,
+				CF60DB44278B21C60023AD52 /* Errors */,
+			);
+			path = MError;
+			sourceTree = "<group>";
+		};
+		CF60DB1E278B20B50023AD52 /* MErrorTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF60DB1F278B20B50023AD52 /* MErrorTests.swift */,
+				CF60DB21278B20B50023AD52 /* Info.plist */,
+			);
+			path = MErrorTests;
+			sourceTree = "<group>";
+		};
+		CF60DB2F278B20CC0023AD52 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CF60DB30278B20D40023AD52 /* MError.swift */,
+				CF60DB3C278B21800023AD52 /* ErrorType.swift */,
+				CF60DB40278B21A90023AD52 /* ErrorCode.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CF60DB34278B20ED0023AD52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF60DB35278B20ED0023AD52 /* MResources.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF60DB44278B21C60023AD52 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				CF60DB45278B21D10023AD52 /* DataError.swift */,
+				CFE98E34278B271900302301 /* ServerError.swift */,
+				CFE98E38278B283200302301 /* ApiError.swift */,
+				CFE98E3C278B286D00302301 /* SecurityError.swift */,
+				CFE98E40278B287D00302301 /* NetworkError.swift */,
+				CFE98E48278BB6D000302301 /* UIIgnorableError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CF60DB0C278B20B50023AD52 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF60DB22278B20B50023AD52 /* MError.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CF60DB10278B20B50023AD52 /* MError */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF60DB25278B20B50023AD52 /* Build configuration list for PBXNativeTarget "MError" */;
+			buildPhases = (
+				CF60DB0C278B20B50023AD52 /* Headers */,
+				CF60DB0D278B20B50023AD52 /* Sources */,
+				CF60DB0E278B20B50023AD52 /* Frameworks */,
+				CF60DB0F278B20B50023AD52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MError;
+			productName = MError;
+			productReference = CF60DB11278B20B50023AD52 /* MError.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CF60DB19278B20B50023AD52 /* MErrorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF60DB28278B20B50023AD52 /* Build configuration list for PBXNativeTarget "MErrorTests" */;
+			buildPhases = (
+				CF60DB16278B20B50023AD52 /* Sources */,
+				CF60DB17278B20B50023AD52 /* Frameworks */,
+				CF60DB18278B20B50023AD52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF60DB1D278B20B50023AD52 /* PBXTargetDependency */,
+			);
+			name = MErrorTests;
+			productName = MErrorTests;
+			productReference = CF60DB1A278B20B50023AD52 /* MErrorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF60DB08278B20B50023AD52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					CF60DB10278B20B50023AD52 = {
+						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
+					};
+					CF60DB19278B20B50023AD52 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = CF60DB0B278B20B50023AD52 /* Build configuration list for PBXProject "MError" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF60DB07278B20B50023AD52;
+			productRefGroup = CF60DB12278B20B50023AD52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF60DB10278B20B50023AD52 /* MError */,
+				CF60DB19278B20B50023AD52 /* MErrorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF60DB0F278B20B50023AD52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF60DB18278B20B50023AD52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF60DB0D278B20B50023AD52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFE98E35278B271900302301 /* ServerError.swift in Sources */,
+				CFE98E41278B287D00302301 /* NetworkError.swift in Sources */,
+				CF60DB3D278B21800023AD52 /* ErrorType.swift in Sources */,
+				CF60DB31278B20D40023AD52 /* MError.swift in Sources */,
+				CF60DB46278B21D10023AD52 /* DataError.swift in Sources */,
+				CF60DB41278B21A90023AD52 /* ErrorCode.swift in Sources */,
+				CFE98E39278B283200302301 /* ApiError.swift in Sources */,
+				CFE98E49278BB6D000302301 /* UIIgnorableError.swift in Sources */,
+				CFE98E3D278B286D00302301 /* SecurityError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF60DB16278B20B50023AD52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF60DB20278B20B50023AD52 /* MErrorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF60DB1D278B20B50023AD52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF60DB10278B20B50023AD52 /* MError */;
+			targetProxy = CF60DB1C278B20B50023AD52 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CF60DB23278B20B50023AD52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CF60DB24278B20B50023AD52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CF60DB26278B20B50023AD52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MError/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = supremetech.MError;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CF60DB27278B20B50023AD52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MError/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = supremetech.MError;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CF60DB29278B20B50023AD52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = USH6AFRS9N;
+				INFOPLIST_FILE = MErrorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = supremetech.MErrorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF60DB2A278B20B50023AD52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = USH6AFRS9N;
+				INFOPLIST_FILE = MErrorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = supremetech.MErrorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF60DB0B278B20B50023AD52 /* Build configuration list for PBXProject "MError" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF60DB23278B20B50023AD52 /* Debug */,
+				CF60DB24278B20B50023AD52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF60DB25278B20B50023AD52 /* Build configuration list for PBXNativeTarget "MError" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF60DB26278B20B50023AD52 /* Debug */,
+				CF60DB27278B20B50023AD52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF60DB28278B20B50023AD52 /* Build configuration list for PBXNativeTarget "MErrorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF60DB29278B20B50023AD52 /* Debug */,
+				CF60DB2A278B20B50023AD52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF60DB08278B20B50023AD52 /* Project object */;
+}

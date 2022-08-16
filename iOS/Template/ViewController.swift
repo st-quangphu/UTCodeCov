@@ -1,19 +1,14 @@
 //
 //  ViewController.swift
-//  Template
+//  Majica
 //
-//  Created by Quang Phu C. M. on 8/16/22.
+//  Created by MBP0003 on 1/9/22.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-

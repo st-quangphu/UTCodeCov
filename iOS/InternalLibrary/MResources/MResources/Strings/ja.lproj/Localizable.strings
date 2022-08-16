@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  MResources
+
+  Created by MBP0003 on 1/9/22.
+  
+*/
+"common.button.ok" = "わかった";
+
+// MARK: - Weather detail
+"weather_detail_added_to_list" = "Added to list";
+"weather_detail_add_to_list" = "Add to list";

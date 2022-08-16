@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30EB017B28A12FE300607281 /* WeatherServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EB017A28A12FE300607281 /* WeatherServiceSpec.swift */; };
+		30EB017C28A130AC00607281 /* MockWeatherApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EB017628A12F2900607281 /* MockWeatherApiClient.swift */; };
+		A50E29EB287EC065000CEA12 /* WeatherSevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E29EA287EC065000CEA12 /* WeatherSevice.swift */; };
+		A591D29728A0F9F200DFB882 /* MTestBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A591D29628A0F9F200DFB882 /* MTestBase.framework */; };
+		A5C6D51A288119F70064E6C5 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C6D519288119F70064E6C5 /* LocationService.swift */; };
+		A5FE823A28A34CEA00C380EE /* MDataStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FE823928A34CEA00C380EE /* MDataStore.framework */; };
+		CFE98EB4278C779D00302301 /* MService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE98EAA278C779D00302301 /* MService.framework */; };
+		CFE98EB9278C779D00302301 /* MServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE98EB8278C779D00302301 /* MServiceTests.swift */; };
+		CFE98EBB278C779D00302301 /* MService.h in Headers */ = {isa = PBXBuildFile; fileRef = CFE98EAD278C779D00302301 /* MService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFE98EC8278C77AE00302301 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE98EC7278C77AE00302301 /* ServiceProvider.swift */; };
+		CFE98ECC278C77BC00302301 /* ServiceProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE98ECB278C77BC00302301 /* ServiceProviderType.swift */; };
+		CFE98ED1278C77E400302301 /* ExampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE98ED0278C77E400302301 /* ExampleService.swift */; };
+		CFE98FFB278D96FC00302301 /* MModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE98FFA278D96FC00302301 /* MModels.framework */; };
+		CFE99001278D970B00302301 /* MNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE99000278D970B00302301 /* MNetwork.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFE98EB5278C779D00302301 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFE98EA1278C779D00302301 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFE98EA9278C779D00302301;
+			remoteInfo = MService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30EB017628A12F2900607281 /* MockWeatherApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWeatherApiClient.swift; sourceTree = "<group>"; };
+		30EB017A28A12FE300607281 /* WeatherServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceSpec.swift; sourceTree = "<group>"; };
+		A50E29EA287EC065000CEA12 /* WeatherSevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSevice.swift; sourceTree = "<group>"; };
+		A591D29628A0F9F200DFB882 /* MTestBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MTestBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A59E5454286EADB800A27DCC /* MTestBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MTestBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A59E5456286EAE1300A27DCC /* MTestBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MTestBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A59E5458286EAE4200A27DCC /* MTestBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MTestBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C6D519288119F70064E6C5 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		A5FE823728A34CDE00C380EE /* MDataStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MDataStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5FE823928A34CEA00C380EE /* MDataStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MDataStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE98EAA278C779D00302301 /* MService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE98EAD278C779D00302301 /* MService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MService.h; sourceTree = "<group>"; };
+		CFE98EAE278C779D00302301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFE98EB3278C779D00302301 /* MServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE98EB8278C779D00302301 /* MServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MServiceTests.swift; sourceTree = "<group>"; };
+		CFE98EBA278C779D00302301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFE98EC7278C77AE00302301 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		CFE98ECB278C77BC00302301 /* ServiceProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderType.swift; sourceTree = "<group>"; };
+		CFE98ED0278C77E400302301 /* ExampleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleService.swift; sourceTree = "<group>"; };
+		CFE98FFA278D96FC00302301 /* MModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE99000278D970B00302301 /* MNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFE98EA7278C779D00302301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5FE823A28A34CEA00C380EE /* MDataStore.framework in Frameworks */,
+				CFE98FFB278D96FC00302301 /* MModels.framework in Frameworks */,
+				CFE99001278D970B00302301 /* MNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFE98EB0278C779D00302301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A591D29728A0F9F200DFB882 /* MTestBase.framework in Frameworks */,
+				CFE98EB4278C779D00302301 /* MService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30EB017728A12F2900607281 /* MockedAPIClients */ = {
+			isa = PBXGroup;
+			children = (
+				30EB017628A12F2900607281 /* MockWeatherApiClient.swift */,
+			);
+			path = MockedAPIClients;
+			sourceTree = "<group>";
+		};
+		CFE98EA0278C779D00302301 = {
+			isa = PBXGroup;
+			children = (
+				CFE98EAC278C779D00302301 /* MService */,
+				CFE98EB7278C779D00302301 /* MServiceTests */,
+				CFE98EAB278C779D00302301 /* Products */,
+				CFE98FF9278D96FC00302301 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CFE98EAB278C779D00302301 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFE98EAA278C779D00302301 /* MService.framework */,
+				CFE98EB3278C779D00302301 /* MServiceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFE98EAC278C779D00302301 /* MService */ = {
+			isa = PBXGroup;
+			children = (
+				CFE98EAD278C779D00302301 /* MService.h */,
+				CFE98EAE278C779D00302301 /* Info.plist */,
+				CFE98EC6278C77A200302301 /* Base */,
+				CFE98ECF278C77D900302301 /* Services */,
+			);
+			path = MService;
+			sourceTree = "<group>";
+		};
+		CFE98EB7278C779D00302301 /* MServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				30EB017728A12F2900607281 /* MockedAPIClients */,
+				CFE98EB8278C779D00302301 /* MServiceTests.swift */,
+				CFE98EBA278C779D00302301 /* Info.plist */,
+				30EB017A28A12FE300607281 /* WeatherServiceSpec.swift */,
+			);
+			path = MServiceTests;
+			sourceTree = "<group>";
+		};
+		CFE98EC6278C77A200302301 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CFE98EC7278C77AE00302301 /* ServiceProvider.swift */,
+				CFE98ECB278C77BC00302301 /* ServiceProviderType.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CFE98ECF278C77D900302301 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A5C6D519288119F70064E6C5 /* LocationService.swift */,
+				A50E29EA287EC065000CEA12 /* WeatherSevice.swift */,
+				CFE98ED0278C77E400302301 /* ExampleService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CFE98FF9278D96FC00302301 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5FE823928A34CEA00C380EE /* MDataStore.framework */,
+				A5FE823728A34CDE00C380EE /* MDataStore.framework */,
+				A591D29628A0F9F200DFB882 /* MTestBase.framework */,
+				A59E5458286EAE4200A27DCC /* MTestBase.framework */,
+				A59E5456286EAE1300A27DCC /* MTestBase.framework */,
+				A59E5454286EADB800A27DCC /* MTestBase.framework */,
+				CFE99000278D970B00302301 /* MNetwork.framework */,
+				CFE98FFA278D96FC00302301 /* MModels.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CFE98EA5278C779D00302301 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFE98EBB278C779D00302301 /* MService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CFE98EA9278C779D00302301 /* MService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFE98EBE278C779D00302301 /* Build configuration list for PBXNativeTarget "MService" */;
+			buildPhases = (
+				CFE98EA5278C779D00302301 /* Headers */,
+				CFE98EA6278C779D00302301 /* Sources */,
+				CFE98EA7278C779D00302301 /* Frameworks */,
+				CFE98EA8278C779D00302301 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MService;
+			packageProductDependencies = (
+			);
+			productName = MService;
+			productReference = CFE98EAA278C779D00302301 /* MService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CFE98EB2278C779D00302301 /* MServiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFE98EC1278C779D00302301 /* Build configuration list for PBXNativeTarget "MServiceTests" */;
+			buildPhases = (
+				CFE98EAF278C779D00302301 /* Sources */,
+				CFE98EB0278C779D00302301 /* Frameworks */,
+				CFE98EB1278C779D00302301 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFE98EB6278C779D00302301 /* PBXTargetDependency */,
+			);
+			name = MServiceTests;
+			productName = MServiceTests;
+			productReference = CFE98EB3278C779D00302301 /* MServiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFE98EA1278C779D00302301 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					CFE98EA9278C779D00302301 = {
+						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
+					};
+					CFE98EB2278C779D00302301 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = CFE98EA4278C779D00302301 /* Build configuration list for PBXProject "MService" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFE98EA0278C779D00302301;
+			packageReferences = (
+			);
+			productRefGroup = CFE98EAB278C779D00302301 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFE98EA9278C779D00302301 /* MService */,
+				CFE98EB2278C779D00302301 /* MServiceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFE98EA8278C779D00302301 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFE98EB1278C779D00302301 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFE98EA6278C779D00302301 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C6D51A288119F70064E6C5 /* LocationService.swift in Sources */,
+				CFE98ECC278C77BC00302301 /* ServiceProviderType.swift in Sources */,
+				CFE98ED1278C77E400302301 /* ExampleService.swift in Sources */,
+				A50E29EB287EC065000CEA12 /* WeatherSevice.swift in Sources */,
+				CFE98EC8278C77AE00302301 /* ServiceProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFE98EAF278C779D00302301 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFE98EB9278C779D00302301 /* MServiceTests.swift in Sources */,
+				30EB017C28A130AC00607281 /* MockWeatherApiClient.swift in Sources */,
+				30EB017B28A12FE300607281 /* WeatherServiceSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFE98EB6278C779D00302301 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFE98EA9278C779D00302301 /* MService */;
+			targetProxy = CFE98EB5278C779D00302301 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CFE98EBC278C779D00302301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CFE98EBD278C779D00302301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CFE98EBF278C779D00302301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = supremetech.MService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CFE98EC0278C779D00302301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = supremetech.MService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CFE98EC2278C779D00302301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = USH6AFRS9N;
+				INFOPLIST_FILE = MServiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = supremetech.MServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFE98EC3278C779D00302301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = USH6AFRS9N;
+				INFOPLIST_FILE = MServiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = supremetech.MServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFE98EA4278C779D00302301 /* Build configuration list for PBXProject "MService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFE98EBC278C779D00302301 /* Debug */,
+				CFE98EBD278C779D00302301 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFE98EBE278C779D00302301 /* Build configuration list for PBXNativeTarget "MService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFE98EBF278C779D00302301 /* Debug */,
+				CFE98EC0278C779D00302301 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFE98EC1278C779D00302301 /* Build configuration list for PBXNativeTarget "MServiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFE98EC2278C779D00302301 /* Debug */,
+				CFE98EC3278C779D00302301 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFE98EA1278C779D00302301 /* Project object */;
+}
