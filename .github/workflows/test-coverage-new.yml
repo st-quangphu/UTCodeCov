@@ -25,12 +25,12 @@ jobs:
     steps:
       - name: Check out
         uses: actions/checkout@v1
-      - name: Coverage comment
-        uses: kuju63/coverage-comment
-        with:
-          token: ${{ github.token }}
-          paths: coverage/coverage-summary.xml
-          type: 'cobertura'
-          debug: '0'
+      # - name: Coverage comment
+      #   uses: kuju63/coverage-comment
+      #   with:
+      #     token: ${{ github.token }}
+      #     paths: coverage/coverage-summary.xml
+      #     type: 'cobertura'
+      #     debug: '0'
 
         
