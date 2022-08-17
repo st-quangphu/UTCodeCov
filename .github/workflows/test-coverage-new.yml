@@ -15,7 +15,7 @@
 #         with:
 #           output-file: ./coverage/lcov.info
 
-name: Test Coverage Report
+name: Try comment on PR
 
 on: [push]
 
@@ -23,9 +23,9 @@ jobs:
   build:
     runs-on: macos-latest
     steps:
-      - name: Test
+      - name: Check out
         uses: actions/checkout@v1
-      - name: Test coverage
+      - name: Coverage comment
         uses: kuju63/coverage-comment
         with:
           token: ${{ github.token }}

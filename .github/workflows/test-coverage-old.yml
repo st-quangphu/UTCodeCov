@@ -1,9 +1,9 @@
-name: Test Coverage
+name: Test Coverage 1
 
 on: [push]
 
 jobs:
-  build:
+  build-1:
     runs-on: macos-latest
     steps:
       - name: Test
