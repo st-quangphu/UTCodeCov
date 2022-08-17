@@ -1,36 +1,41 @@
-# name: Test Coverage
-
-# on: [push]
-
-
-# jobs:
-#   run-linters:
-#     runs-on: macos-latest
-#     steps:
-#       - name: Run tests
-#         run: swift test --enable-code-coverage
-
-#       - name: Test coverage
-#         uses: maxep/spm-lcov-action@0.3.0
-#         with:
-#           output-file: ./coverage/lcov.info
-
 name: Try comment on PR
 
 on: [push]
 
+
 jobs:
-  build:
-    # runs-on: macos-latest
-    runs-on: ubuntu-latest
+  run-linters:
+    runs-on: macos-latest
     steps:
-      - name: Check out
-        uses: actions/checkout@v1
-      - name: Display coverage
-        uses: ewjoachim/coverage-comment-action@v1
+      - name: Run tests
+        run: swift test --enable-code-coverage
+
+      - name: Test coverage
+        uses: maxep/spm-lcov-action@0.3.0
         with:
-          GITHUB_TOKEN: ${{ github.token }}
-          COVERAGE_FILE: coverage/coverage-summary.xml
-          BADGE_FILENAME: coverage/coverage-summary.json
+          output-file: ./coverage/lcov.info
+
+      - name: Comment Coverage
+        uses: romeovs/lcov-reporter-action@v0.2.16
+        with:
+          lcov-file: ./coverage/lcov.info
+
+# name: Try comment on PR
+
+# on: [push]
+
+# jobs:
+#   build:
+#     # runs-on: macos-latest
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Check out
+#         uses: actions/checkout@v1
+#       - name: Display coverage
+#         uses: ewjoachim/coverage-comment-action@v1
+#         with:
+#           GITHUB_TOKEN: ${{ github.token }}
+#           COVERAGE_FILE: coverage/coverage-summary.xml
+#           BADGE_FILENAME: coverage/coverage-summary.json
 
         
