@@ -25,15 +25,12 @@ jobs:
     steps:
       - name: Test
         uses: actions/checkout@v1
-      - name: Build and Test
-        run:  xcodebuild -workspace iOS/Template.xcworkspace -scheme AllUnitTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=15.2' -enableCodeCoverage YES test
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v1.2.1
-      # - name: Build and Test
-      #   run: swift test --enable-code-coverage --skip-build --show-codecov-path
-      # - name: Test coverage
-      #   uses: maxep/spm-lcov-action@0.3.0
-      #   with:
-      #     output-file: ./coverage/lcov.info
+      - name: Test coverage
+        uses: kuju63/coverage-comment
+        with:
+          token: ${{ github.token }}
+          paths: coverage/coverage-summary.xml
+          type: 'cobertura'
+          debug: '0'
 
         

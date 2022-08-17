@@ -1,0 +1,48 @@
+<coverage version="1">
+  <file path="/Users/quang.phu/Downloads/sonar-scanning-examples-master/swift-coverage/swift-coverage-example/swift-coverage-example/AppDelegate.swift">
+    <lineToCover lineNumber="17" covered="true"/>
+    <lineToCover lineNumber="18" covered="true"/>
+    <lineToCover lineNumber="19" covered="true"/>
+    <lineToCover lineNumber="21" covered="false"/>
+    <lineToCover lineNumber="22" covered="false"/>
+    <lineToCover lineNumber="23" covered="false"/>
+    <lineToCover lineNumber="29" covered="true"/>
+    <lineToCover lineNumber="30" covered="true"/>
+    <lineToCover lineNumber="31" covered="false"/>
+    <lineToCover lineNumber="32" covered="true"/>
+    <lineToCover lineNumber="33" covered="true"/>
+    <lineToCover lineNumber="34" covered="true"/>
+    <lineToCover lineNumber="35" covered="true"/>
+  </file>
+  <file path="/Users/quang.phu/Downloads/sonar-scanning-examples-master/swift-coverage/swift-coverage-example/swift-coverage-example/AppDelegate2.swift">
+    <lineToCover lineNumber="11" covered="true"/>
+    <lineToCover lineNumber="12" covered="true"/>
+    <lineToCover lineNumber="13" covered="false"/>
+    <lineToCover lineNumber="14" covered="true"/>
+    <lineToCover lineNumber="15" covered="true"/>
+    <lineToCover lineNumber="16" covered="true"/>
+    <lineToCover lineNumber="17" covered="true"/>
+  </file>
+  <file path="/Users/quang.phu/Downloads/sonar-scanning-examples-master/swift-coverage/swift-coverage-example/swift-coverage-exampleTests/swift_coverage_exampleTests.swift">
+    <lineToCover lineNumber="14" covered="true"/>
+    <lineToCover lineNumber="15" covered="true"/>
+    <lineToCover lineNumber="16" covered="true"/>
+    <lineToCover lineNumber="18" covered="true"/>
+    <lineToCover lineNumber="19" covered="true"/>
+    <lineToCover lineNumber="20" covered="true"/>
+    <lineToCover lineNumber="21" covered="true"/>
+    <lineToCover lineNumber="23" covered="true"/>
+    <lineToCover lineNumber="24" covered="true"/>
+    <lineToCover lineNumber="25" covered="true"/>
+    <lineToCover lineNumber="26" covered="true"/>
+    <lineToCover lineNumber="28" covered="true"/>
+    <lineToCover lineNumber="29" covered="true"/>
+    <lineToCover lineNumber="30" covered="true"/>
+    <lineToCover lineNumber="31" covered="true"/>
+    <lineToCover lineNumber="32" covered="true"/>
+    <lineToCover lineNumber="33" covered="true"/>
+    <lineToCover lineNumber="35" covered="true"/>
+    <lineToCover lineNumber="36" covered="true"/>
+    <lineToCover lineNumber="37" covered="true"/>
+  </file>
+</coverage>
